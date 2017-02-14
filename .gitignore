@@ -1,4 +1,6 @@
 .flatpak-builder/
 inkscape/
 repo/
+inkscape.flatpak
 inkscape.flatpakref
+Makefile.config
