@@ -7,6 +7,7 @@ release: repo org.inkscape.Inkscape.json
 
 bundle:
 	flatpak build-bundle repo inkscape.flatpak org.inkscape.Inkscape
+	gpg --sign-with ${GPG_KEY} --output inkscape.flatpak.sig --detach-sign inkscape.flatpak
 
 repo:
 	ostree init --mode=archive-z2 --repo=repo
