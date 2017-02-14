@@ -1,0 +1,7 @@
+[Flatpak Ref]
+Title=Inkscape
+Name=org.inkscape.Inkscape
+Url=@REPO_URL@
+IsRuntime=False
+RuntimeRepo=https://sdk.gnome.org/gnome.flatpakrepo
+GPGKey=@GPG@
