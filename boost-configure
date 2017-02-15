@@ -1,5 +1,5 @@
 
-./bootstrap.sh "$@"
+./bootstrap.sh "$@" --without-libraries=atomic,chrono,container,context,coroutine,coroutine2,date_time,exception,filesystem,graph,graph_parallel,iostreams,locale,log,math,mpi,program_options,python,random,regex,serialization,signals,system,test,thread,timer,type_erasure,wave
 
 
 cat <<EOF >Makefile

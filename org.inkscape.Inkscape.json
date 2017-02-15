@@ -34,6 +34,22 @@
     ],
     "modules": [
         {
+            "name": "boost",
+            "config-opts": [],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://downloads.sourceforge.net/project/boost/boost/1.60.0/boost_1_60_0.tar.bz2",
+                    "sha256": "686affff989ac2488f79a97b9479efb9f2abae035b5ed4d8226de6857933fd3b"
+                },
+                {
+                    "type": "file",
+                    "path": "boost-configure",
+                    "dest-filename": "configure"
+                }
+            ]
+        },
+        {
             "name": "sigc++-2",
             "sources": [
                 {
@@ -70,23 +86,6 @@
                     "type": "archive",
                     "url": "http://http.debian.net/debian/pool/main/libg/libgc/libgc_7.4.2.orig.tar.gz",
                     "sha256": "09f21d38dd42bced14d6875f55804cb1b5e6bc486da7980187ecd2e768739c62"
-                }
-            ]
-        },
-        {
-            "name": "boost",
-            "config-opts": [],
-            "cleanup": [ "/lib/libboost_*.a" ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/boost/boost/1.60.0/boost_1_60_0.tar.bz2",
-                    "sha256": "686affff989ac2488f79a97b9479efb9f2abae035b5ed4d8226de6857933fd3b"
-                },
-                {
-                    "type": "file",
-                    "path": "boost-configure",
-                    "dest-filename": "configure"
                 }
             ]
         },
