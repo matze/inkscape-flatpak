@@ -142,8 +142,9 @@
         {
             "name": "inkscape",
             "post-install": [
-                "mkdir /app/share/app-info/",
-                "mv /app/share/appdata/inkscape.appdata.xml /app/share/app-info/"
+                "mkdir -p /app/share/app-info/xmls",
+                "mv /app/share/appdata/inkscape.appdata.xml /app/share/app-info/xmls/org.inkscape.Inkscape.xml",
+                "gzip /app/share/app-info/xmls/org.inkscape.Inkscape.xml"
             ],
             "sources": [
                 {
