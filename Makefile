@@ -1,7 +1,6 @@
 include Makefile.config
 
 release: repo org.inkscape.Inkscape.json
-	echo ${GPG_KEY}
 	flatpak-builder --force-clean --repo=repo --ccache --gpg-sign=${GPG_KEY} inkscape org.inkscape.Inkscape.json
 	flatpak build-update-repo --generate-static-deltas --gpg-sign=${GPG_KEY} repo
 
