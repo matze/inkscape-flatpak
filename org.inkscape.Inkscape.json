@@ -140,6 +140,17 @@
             ]
         },
         {
+            "name": "potrace",
+            "config-opts": ["--with-libpotrace"],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://potrace.sourceforge.net/download/1.14/potrace-1.14.tar.gz",
+                    "sha256": "db72b65311cfdcb63880b317f610d84485f086e15f88ca2346012d49414cd97e"
+                }
+            ]
+        },
+        {
             "name": "inkscape",
             "post-install": [
                 "mkdir -p /app/share/app-info/xmls",
