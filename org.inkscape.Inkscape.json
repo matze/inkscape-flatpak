@@ -151,6 +151,23 @@
             ]
         },
         {
+            "name": "lxml",
+            "config-opts": ["--module=lxml==3.7.3"],
+            "build-options": {
+                "env": {
+                    "XSLT_CONFIG": "pkg-config libxslt"
+                },
+                "build-args": ["--share=network"]
+            },
+            "sources": [
+                {
+                    "type": "file",
+                    "path": "py-configure",
+                    "dest-filename": "configure"
+                }
+            ]
+        },
+        {
             "name": "inkscape",
             "post-install": [
                 "mkdir -p /app/share/app-info/xmls",
