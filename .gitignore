@@ -2,6 +2,6 @@
 inkscape/
 repo/
 inkscape-*.flatpak
-inkscape.flatpak.sig
+inkscape-*.flatpak.sig
 inkscape.flatpakref
 Makefile.config
